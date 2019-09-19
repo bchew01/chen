@@ -50,7 +50,7 @@ table {
 	width: 50%;
 	height: 60%;
 	align: center;
-	table-layout: fixed;
+	table-layout: auto;
 }
 th {
 	height: 30px;
