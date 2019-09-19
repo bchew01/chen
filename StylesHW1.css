@@ -36,8 +36,9 @@ html, body {
 h1 {
 	top: 48px;
 	text-align: center;
+	color:#FFFFFF;
 }
-h1, h2 {
+h2 {
 	color:#FFFFFF;
 }
 h3 {
