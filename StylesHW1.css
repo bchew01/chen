@@ -20,6 +20,9 @@ li a {
 	text-decoration: none;
 	color: #FFFFFF;
 }
+a:hover {
+	text-decoration: underline;
+}
 
 html, body {
 	height: 100%;
@@ -62,5 +65,9 @@ table {
 }
 th {
 	height: 30px;
+}
+
+td {
+	color: #FFFFFF;
 }
 
