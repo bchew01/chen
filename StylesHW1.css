@@ -4,9 +4,9 @@ ul.nav {
 	padding: 0;
 	background-color: #333333;
 	height: 40pt;
-}
+}	
 
-li {
+li.nav {
 	float: left;
 }
 
@@ -23,6 +23,8 @@ li a {
 a:hover {
 	text-decoration: underline;
 }
+
+
 
 html, body {
 	height: 100%;
@@ -45,7 +47,7 @@ h3 {
 	text-align: center;
 }
 
-.blue {
+body.blue {
 	background-color: #3399FF;
 	background-size: 100% 100%;
 }
