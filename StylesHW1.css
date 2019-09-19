@@ -24,7 +24,10 @@ a:hover {
 	text-decoration: underline;
 }
 
-
+ul.package {
+	list-style-type: none;
+	display: block;
+}
 
 html, body {
 	height: 100%;
