@@ -4,6 +4,7 @@ ul.nav {
 	padding: 0;
 	background-color: #333333;
 	height: 40pt;
+	position: fixed;
 }	
 
 li.nav {
