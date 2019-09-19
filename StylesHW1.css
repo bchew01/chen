@@ -5,6 +5,7 @@ ul.nav {
 	background-color: #333333;
 	height: 40pt;
 	position: fixed;
+	width: 100%;
 }	
 
 li.nav {
