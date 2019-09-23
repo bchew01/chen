@@ -46,13 +46,16 @@
 			color: #FFF;
 		}
 		nav ul {
-			display: flex;
 			list-style-type:none;
-			justify-content: space-between;
 			margin: 16px;
+			width: 100%;
 		}
 		nav ul li {
 			display: inline-block;
+			width: 16.6%;
+		}
+		li.search {
+			width: 33.6%;
 		}
 		article {
 			margin-left:0px;
@@ -107,7 +110,7 @@
 	<li><a href="#">Our Team</a></li>
 	<li><a href="#">Projects</a></li>
 	<li><a href="#">Contact</a></li>
-	<li>
+	<li class="search">
 	<form>
 	<input type='text' name='search' placeholder="Search query">
 	<input type = 'submit' value = "Go!">
