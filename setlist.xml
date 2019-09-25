@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type=”text/css” href=”setstyle.css”?>
+
 <!DOCTYPE songlist>
 
 <SONGLIST>
-	<TITLE>Cotton-Eye Joe</TITLE>
-	<ARTIST>Coldplay</ARTIST>
+	<SONG>
+		<TITLE>Cotton-Eye Joe</TITLE>
+		<ARTIST>Coldplay</ARTIST>
+		<GENRE>Rock</GENRE>
+		<DATE>9/25/19</DATE>
+	</SONG>
+	<SONG>
+		<TITLE>Cotton-Bye Joe</TITLE>
+		<ARTIST>Coldsay</ARTIST>
+		<GENRE>Sock</GENRE>
+		<DATE>9/25/19</DATE>
+	</SONG>
 </SONGLIST>
