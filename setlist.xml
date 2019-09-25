@@ -3,63 +3,63 @@
 
 <SONGLIST>
 	<SONG>
-		<TITLE>Cotton-Eye Joe</TITLE>
+		<TITLE>Hey Jude</TITLE>
+		<ARTIST>The Beatles</ARTIST>
+		<GENRE>Pop Rock</GENRE>
+		<DATE>1968</DATE>
+	</SONG>
+	<SONG>
+		<TITLE>Yesterday</TITLE>
+		<ARTIST>The Beatles</ARTIST>
+		<GENRE>Pop</GENRE>
+		<DATE>1965</DATE>
+	</SONG>
+	<SONG>
+		<TITLE>I Want to Hold Your Hand</TITLE>
+		<ARTIST>The Beatles</ARTIST>
+		<GENRE>Pop Rock</GENRE>
+		<DATE>1963</DATE>
+	</SONG>
+	<SONG>
+		<TITLE>Let It Be</TITLE>
+		<ARTIST>The Beatles</ARTIST>
+		<GENRE>Pop Rock</GENRE>
+		<DATE>1970</DATE>
+	</SONG>
+	<SONG>
+		<TITLE>In My Life</TITLE>
+		<ARTIST>The Beatles</ARTIST>
+		<GENRE>Pop Rock</GENRE>
+		<DATE>1965</DATE>
+	</SONG>
+	<SONG>
+		<TITLE>Here Comes the Sun</TITLE>
+		<ARTIST>The Beatles</ARTIST>
+		<GENRE>Pop Rock</GENRE>
+		<DATE>1969</DATE>
+	</SONG>
+	<SONG>
+		<TITLE>While My Guitar Gently Weeps</TITLE>
 		<ARTIST>The Beatles</ARTIST>
 		<GENRE>Rock</GENRE>
-		<DATE>9/25/19</DATE>
+		<DATE>1968</DATE>
 	</SONG>
 	<SONG>
-		<TITLE>Cotton-Bye Joe</TITLE>
+		<TITLE>Long and Winding Road</TITLE>
 		<ARTIST>The Beatles</ARTIST>
-		<GENRE>Sock</GENRE>
-		<DATE>9/25/19</DATE>
+		<GENRE>Rock</GENRE>
+		<DATE>1970</DATE>
 	</SONG>
 	<SONG>
-		<TITLE>Cotton-Bye Joe</TITLE>
+		<TITLE>Hello Goodbye</TITLE>
 		<ARTIST>The Beatles</ARTIST>
-		<GENRE>Sock</GENRE>
-		<DATE>9/25/19</DATE>
+		<GENRE>Pop</GENRE>
+		<DATE>1967</DATE>
 	</SONG>
 	<SONG>
-		<TITLE>Cotton-Bye Joe</TITLE>
+		<TITLE>Back in the U.S.S.R</TITLE>
 		<ARTIST>The Beatles</ARTIST>
-		<GENRE>Sock</GENRE>
-		<DATE>9/25/19</DATE>
-	</SONG>
-	<SONG>
-		<TITLE>Cotton-Bye Joe</TITLE>
-		<ARTIST>The Beatles</ARTIST>
-		<GENRE>Sock</GENRE>
-		<DATE>9/25/19</DATE>
-	</SONG>
-	<SONG>
-		<TITLE>Cotton-Bye Joe</TITLE>
-		<ARTIST>The Beatles</ARTIST>
-		<GENRE>Sock</GENRE>
-		<DATE>9/25/19</DATE>
-	</SONG>
-	<SONG>
-		<TITLE>Cotton-Bye Joe</TITLE>
-		<ARTIST>The Beatles</ARTIST>
-		<GENRE>Sock</GENRE>
-		<DATE>9/25/19</DATE>
-	</SONG>
-	<SONG>
-		<TITLE>Cotton-Bye Joe</TITLE>
-		<ARTIST>The Beatles</ARTIST>
-		<GENRE>Sock</GENRE>
-		<DATE>9/25/19</DATE>
-	</SONG>
-	<SONG>
-		<TITLE>Cotton-Bye Joe</TITLE>
-		<ARTIST>The Beatles</ARTIST>
-		<GENRE>Sock</GENRE>
-		<DATE>9/25/19</DATE>
-	</SONG>
-	<SONG>
-		<TITLE>Cotton-Bye Joe</TITLE>
-		<ARTIST>The Beatles</ARTIST>
-		<GENRE>Sock</GENRE>
-		<DATE>9/25/19</DATE>
+		<GENRE>Rock</GENRE>
+		<DATE>1968</DATE>
 	</SONG>
 </SONGLIST>
