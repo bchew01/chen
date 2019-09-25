@@ -6,21 +6,25 @@ SONGLIST {
 	margin-right: 3cm;
 }
 
+SONG {
+	display: block;
+}
+
 TITLE {
 	text-decoration: underline;
 	color: red;
-	
+	display: block;
 }
 
 ARTIST {
-	display: list-item;
+	display: block;
 }
 
 GENRE {
-	display: list-item;
+	display: block;
 }
 
 DATE {
-	display: list-item;
+	display: block;
 }
 
