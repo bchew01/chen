@@ -13,16 +13,14 @@ TITLE {
 }
 
 ARTIST {
+	display: list-item;
 }
 
 GENRE {
-	
+	display: list-item;
 }
 
 DATE {
-	
-}
-
-TITLE, ARTIST, GENRE, DATE {
 	display: list-item;
 }
+
