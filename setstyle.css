@@ -1,0 +1,28 @@
+SONGLIST {
+	font-family: sans-serif;
+	line-height: 1.5;
+	margin-top: 3cm;
+	margin-left: 3cm;
+	margin-right: 3cm;
+}
+
+TITLE {
+	text-decoration: underline;
+	color: red;
+	
+}
+
+ARTIST {
+}
+
+GENRE {
+	
+}
+
+DATE {
+	
+}
+
+TITLE, ARTIST, GENRE, DATE {
+	display: list-item;
+}
