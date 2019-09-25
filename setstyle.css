@@ -4,6 +4,7 @@ SONGLIST {
 	margin-top: 3cm;
 	margin-left: 3cm;
 	margin-right: 3cm;
+	display: block;
 }
 
 SONG {
@@ -13,18 +14,17 @@ SONG {
 TITLE {
 	text-decoration: underline;
 	color: red;
-	display: block;
 }
 
 ARTIST {
-	display: block;
+	color: blue;
 }
 
 GENRE {
-	display: block;
+	color: green;
 }
 
 DATE {
-	display: block;
+	color: brown;
 }
 
