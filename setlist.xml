@@ -1,30 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="setstyle.css"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
 
 <SONGLIST>
-	<SONG>
-		<TITLE>Hey Jude</TITLE>
-		<ARTIST>The Beatles</ARTIST>
-		<GENRE>Pop Rock</GENRE>
-		<DATE>1968</DATE>
-	</SONG>
-	<SONG>
-		<TITLE>Yesterday</TITLE>
-		<ARTIST>The Beatles</ARTIST>
-		<GENRE>Pop</GENRE>
-		<DATE>1965</DATE>
-	</SONG>
 	<SONG>
 		<TITLE>I Want to Hold Your Hand</TITLE>
 		<ARTIST>The Beatles</ARTIST>
 		<GENRE>Pop Rock</GENRE>
 		<DATE>1963</DATE>
-	</SONG>
-	<SONG>
-		<TITLE>Let It Be</TITLE>
-		<ARTIST>The Beatles</ARTIST>
-		<GENRE>Pop Rock</GENRE>
-		<DATE>1970</DATE>
 	</SONG>
 	<SONG>
 		<TITLE>In My Life</TITLE>
@@ -33,10 +15,28 @@
 		<DATE>1965</DATE>
 	</SONG>
 	<SONG>
-		<TITLE>Here Comes the Sun</TITLE>
+		<TITLE>Yesterday</TITLE>
+		<ARTIST>The Beatles</ARTIST>
+		<GENRE>Pop</GENRE>
+		<DATE>1965</DATE>
+	</SONG>
+	<SONG>
+		<TITLE>Eleanor Rigby</TITLE>
+		<ARTIST>The Beatles</ARTIST>
+		<GENRE>Pop</GENRE>
+		<DATE>1966</DATE>
+	</SONG>
+	<SONG>
+		<TITLE>Back in the U.S.S.R</TITLE>
+		<ARTIST>The Beatles</ARTIST>
+		<GENRE>Rock</GENRE>
+		<DATE>1968</DATE>
+	</SONG>
+	<SONG>
+		<TITLE>Hey Jude</TITLE>
 		<ARTIST>The Beatles</ARTIST>
 		<GENRE>Pop Rock</GENRE>
-		<DATE>1969</DATE>
+		<DATE>1968</DATE>
 	</SONG>
 	<SONG>
 		<TITLE>While My Guitar Gently Weeps</TITLE>
@@ -45,21 +45,21 @@
 		<DATE>1968</DATE>
 	</SONG>
 	<SONG>
+		<TITLE>Here Comes the Sun</TITLE>
+		<ARTIST>The Beatles</ARTIST>
+		<GENRE>Pop Rock</GENRE>
+		<DATE>1969</DATE>
+	</SONG>
+	<SONG>
+		<TITLE>Let It Be</TITLE>
+		<ARTIST>The Beatles</ARTIST>
+		<GENRE>Pop Rock</GENRE>
+		<DATE>1970</DATE>
+	</SONG>
+	<SONG>
 		<TITLE>Long and Winding Road</TITLE>
 		<ARTIST>The Beatles</ARTIST>
 		<GENRE>Rock</GENRE>
 		<DATE>1970</DATE>
-	</SONG>
-	<SONG>
-		<TITLE>Hello Goodbye</TITLE>
-		<ARTIST>The Beatles</ARTIST>
-		<GENRE>Pop</GENRE>
-		<DATE>1967</DATE>
-	</SONG>
-	<SONG>
-		<TITLE>Back in the U.S.S.R</TITLE>
-		<ARTIST>The Beatles</ARTIST>
-		<GENRE>Rock</GENRE>
-		<DATE>1968</DATE>
 	</SONG>
 </SONGLIST>
