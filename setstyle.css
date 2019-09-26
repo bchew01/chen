@@ -38,6 +38,7 @@ DATE {
 
 TITLE:before {
 	content: "Song: ";
+	text-decoration: none;
 }
 
 ARTIST:before {
