@@ -14,17 +14,21 @@ SONG {
 TITLE {
 	text-decoration: underline;
 	color: red;
+	display: block;
 }
 
 ARTIST {
 	color: blue;
+	display: block;
 }
 
 GENRE {
 	color: green;
+	display: block;
 }
 
 DATE {
 	color: brown;
+	display: block;
 }
 
