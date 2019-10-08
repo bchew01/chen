@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>HW4 Joe's Hotdogs</title>
+	<style>
+		input[type=text] {
+			margin-top: 35px;
+			margin-left: 40%;
+			width: 20%;
+			height: 2em;
+			font-size: 16pt;
+			text-align: center;
+			display: block;
+		}
+		input[type=button] {
+			margin-top: 35px;
+			margin-left: 45%;
+			width: 10%;
+			height: 1.5em;
+			text-align: center;
+			display: block;
+		}
+	</style>
+</head>
+<body id="body">
+</body>
+<script>
+	// Create food objects
+		var hotdog = {
+			name:"Hotdogs",
+			price: 3.25,
+			numOrdered: 0
+		}
+		var frenchFries = {
+			name:"French Fries",
+			price: 2.00,
+			numOrdered: 0
+		}
+		var drink = {
+			name:"Drinks",
+			price: 1.50,
+			numOrdered: 0
+		}
+		//make array holding each food object
+		var order = [hotdog, frenchFries, drink];
+
+		//create a form
+		var form = document.createElement("orderForm");
+		// add input elements to the form
+		for (var i = 0; i < 3; i++) {
+			var userInput = document.createElement("input");
+			userInput.setAttribute('type',"text");
+			userInput.setAttribute('id', order[i].name);
+			userInput.setAttribute('placeholder', order[i].name);
+			form.appendChild(userInput);
+		}
+		userInput = document.createElement("input");
+		userInput.setAttribute('type', 'button');
+		userInput.setAttribute('value', 'Order!');
+		userInput.setAttribute('onclick', 'calculateTotal()');
+		form.appendChild(userInput);
+
+		// add the form to the html page
+		form.style.margin = '100px';
+		document.getElementById('body').appendChild(form);
+
+		var orderBtn = document.getElementById('orderButton');
+
+		function calculateTotal() {
+			// get number of each food ordered from the form, store in order array
+			for (var i = 0; i < 3; i++) {
+				order[i].numOrdered = document.getElementById(order[i].name).value;
+			}
+
+			//sum order prices
+			var subtotal = (order[0].numOrdered * order[0].price) + (order[1].numOrdered * order[1].price) + (order[2].numOrdered * order[2].price);
+
+			//determine discount (if any)
+			var discount = 0;
+			if (subtotal >= 20) {
+				discount = subtotal * .1;
+				discount = discount.toFixed(2);
+			}
+
+			//add tax
+			var tax = subtotal * .0625;
+			tax = tax.toFixed(2);
+
+			//calculate total price
+			var totalPrice = parseFloat(tax) + parseFloat(subtotal) - parseFloat(discount);
+			totalPrice = totalPrice.toFixed(2);
+
+			// write order results to screen
+			document.write("<ul style='list-style-type: none; text-align: center; margin-top: 30px;'>");
+			document.write("<li>Hotdogs: " + order[0].numOrdered + "</li>");
+			document.write("<li>French Fries: " + order[1].numOrdered + "</li>");
+			document.write("<li>Drinks: " + order[2].numOrdered + "</li>");
+			document.write("<hr style='width: 20%; float: center;'><br/>");
+			document.write("<li>subtotal: $" + subtotal + "</li>");
+			if (discount != 0)
+				document.write("<li>discount: $" + discount + "</li>");
+			document.write("<li>tax: $" + tax + "</li>");
+			document.write("<li>total: $" + totalPrice + "</li>");
+			document.write("</ul>");
+		}
+</script>
+</html>

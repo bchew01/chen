@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="lottery.css">
+	<title>HW4 Lottery</title>
+	<script>
+		// Randomly generate winning numbers
+		var lottoNumbers = new Array();
+		for (var i = 0; i < 6; i++) {
+			if (i < 5) {
+				lottoNumbers[i] = Math.floor(Math.random() * 48 + 1);
+			} else {
+				lottoNumbers[i] = Math.floor(Math.random() * 18 + 1);
+			}
+		}
+		//remove lucky number from the main array and store it
+		var luckyNumber = lottoNumbers[5];
+		lottoNumbers.pop();
+
+		function calculatePayout() {
+			var userGuessArray = new Array();
+			var guess = document.getElementById("userGuesses").value;
+			userGuessArray = guess.split(" ");
+			userGuessArray.sort(function(a,b) {
+   	 		return a - b
+		})
+			var numberMatches = 0;
+			
+			//convert user guess string into integers and find the number of matches with the winning numbers
+			for (var i = 0; i < userGuessArray.length; i++) {
+				userGuessArray[i] = parseInt(userGuessArray[i], 10);
+				if (userGuessArray[i] == lottoNumbers[i]) {
+					numberMatches++;
+				}
+			}
+			var userLucky = document.getElementById("userLucky").value;
+
+			switch(numberMatches) {
+				case 0:
+					if (luckyNumber == userLucky)
+						alert("You win $4!");
+					else
+						alert("You lost!");
+					break;
+
+				case 1:
+					if (luckyNumber == userLucky)
+						alert("You win $6!");
+					else
+						alert("You lost!");
+					break;
+
+					case 2:
+					if (luckyNumber == userLucky)
+						alert("You win $25!");
+					else
+						alert("You win $3!");
+					break;
+
+					case 3:
+					if (luckyNumber == userLucky)
+						alert("You win $150!");
+					else
+						alert("You win $20!");
+					break;
+
+					case 4:
+					if (luckyNumber == userLucky)
+						alert("You win $5,000");
+					else
+						alert("You win $200");
+					break;
+
+					case 5:
+					if (luckyNumber == userLucky) {
+						alert("Congratulations! You win $7,000 a week for life!");
+					}
+					else {
+						alert("Congratulations! You win $25,000 a month for life!");
+					}
+					break;
+			}
+		}
+	</script>
+</head>
+<body>
+	<ul id="first">
+		<li><script>document.write(lottoNumbers[0])</script></li>
+		<li><script>document.write(lottoNumbers[1])</script></li>
+		<li><script>document.write(lottoNumbers[2])</script></li>
+		<li><script>document.write(lottoNumbers[3])</script></li>
+		<li><script>document.write(lottoNumbers[4])</script></li>
+		<li><script>document.write(luckyNumber)</script></li>
+	</ul>
+	<script>
+		lottoNumbers.sort(function(a,b) {
+   	 		return a - b
+		})
+	</script>
+	<ul>
+		<li><script>document.write(lottoNumbers[0])</script></li>
+		<li><script>document.write(lottoNumbers[1])</script></li>
+		<li><script>document.write(lottoNumbers[2])</script></li>
+		<li><script>document.write(lottoNumbers[3])</script></li>
+		<li><script>document.write(lottoNumbers[4])</script></li>
+		<li><script>document.write(luckyNumber)</script></li>
+	</ul>
+	<form>
+		<input type="text" id="userGuesses" placeholder="Enter 5 numbers">
+		<input type="text" id="userLucky" placeholder="Enter 1 lucky number"> <br/>
+		<input type="button" value="Submit!" onclick="calculatePayout()">
+	</form>
+</body>
+</html>

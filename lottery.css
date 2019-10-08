@@ -1,0 +1,36 @@
+ul {
+			width:60%;
+			margin-left: 20%;
+			margin-right: 20%;
+			list-style-type: none;
+			display: inline-flex;
+			justify-content: space-between;
+			margin-top: 5%;
+			margin-bottom: 2.5%;
+		}
+		#first {
+			margin-top: 10%;
+			margin-bottom: 0;
+		}
+		li {
+			width: 10%;
+		}
+		body {
+			height, width: 100%;
+			overflow: hidden;
+		}
+		form {
+			text-align: center;
+			width: 60%;
+			margin-left: 20%;
+			margin-right: 20%;
+		}
+		input[type=text] {
+			line-height: 3;
+			width: 15%;
+			margin-bottom: 20px;
+		}
+		input[type=button] {
+			width: 10em;
+			height: 8em;
+		}
