@@ -83,19 +83,24 @@
 </head>
 <body>
 	<ul id="first">
-		<li><script>document.write(lottoNumbers[0])</script></li>
-		<li><script>document.write(lottoNumbers[1])</script></li>
-		<li><script>document.write(lottoNumbers[2])</script></li>
-		<li><script>document.write(lottoNumbers[3])</script></li>
-		<li><script>document.write(lottoNumbers[4])</script></li>
-		<li><script>document.write(luckyNumber)</script></li>
+		<script>
+			for (var i = 0; i < lottoNumbers.length; i++) {
+				document.write("<li>" + lottoNumbers[i] + "</li>");
+			}
+			document.write("<li>" + luckyNumber + "</li>");
+		</script>
 	</ul>
 	<script>
-		lottoNumbers.sort(function(a,b) {
-   	 		return a - b
-		})
+		lottoNumbers.sort(function(a, b){return a - b});
 	</script>
 	<ul>
+		<script>
+			for (var i = 0; i < lottoNumbers.length; i++) {
+				document.write("<li>" + lottoNumbers[i] + "</li>");
+			}
+			document.write("<li>" + luckyNumber + "</li>");
+		</script>
+	</ul>
 		<li><script>document.write(lottoNumbers[0])</script></li>
 		<li><script>document.write(lottoNumbers[1])</script></li>
 		<li><script>document.write(lottoNumbers[2])</script></li>
