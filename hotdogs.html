@@ -31,16 +31,11 @@
 			this.price = 0;
 			this.numOrdered = 0;
 		}
-		var hotdog = new userOrder;
-		hotdog.name = "Hotdogs";
-		hotdog.price = 3.25;
+		var hotdog = new userOrder("Hotdogs", 3.25);
 
-		var frenchFries = new userOrder;
-		frenchFries.name = "FrenchFries";
-		frenchFries.price = 2.00;
-		var drink = new userOrder;
-		drink.name = "Drinks";
-		drink.price = 1.50;
+		var frenchFries = new userOrder("French Fries", 2.00);
+
+		var drink = new userOrder("Drinks", 1.50);
 	
 		//make array holding each food object
 		var order = [hotdog, frenchFries, drink];
