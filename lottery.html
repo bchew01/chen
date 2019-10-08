@@ -22,14 +22,11 @@
 			var userGuessArray = new Array();
 			var guess = document.getElementById("userGuesses").value;
 			userGuessArray = guess.split(" ");
-			userGuessArray.sort(function(a,b) {
-   	 		return a - b
-		})
+			userGuessArray.sort(function(a,b){return a - b})
 			var numberMatches = 0;
 			
 			//convert user guess string into integers and find the number of matches with the winning numbers
 			for (var i = 0; i < userGuessArray.length; i++) {
-				userGuessArray[i] = parseInt(userGuessArray[i], 10);
 				if (userGuessArray[i] == lottoNumbers[i]) {
 					numberMatches++;
 				}
