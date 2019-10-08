@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="amicable.css">
+	<title>HW5a JS Practice</title>
+</head>
+<body>
+	<form>
+		<input type="number" id="num1">
+		<input type="number" id="num2">
+		<br/>
+		<input type="button" value="Go!" id="button1">
+	</form>
+</body>
+<script>
+	function isFactor(number, testnumber) {
+		if ((number % testnumber) == 0)
+			return true;
+		else
+			return false;
+	}
+	/* isFactor test code
+
+	document.write("Expect 5 Goods: ");
+	if (isFactor(1918272625, 1))
+		document.write("Good ");
+	if (isFactor(4,2))
+		document.write("Good ");
+	if (!isFactor(5,3))
+		document.write("Good ");
+	if (isFactor(18925, 3785))
+		document.write("Good ");
+	if (!isFactor(18925, 3784))
+		document.write("Good");
+
+	*/
+	function showFactors(factorArray) {
+		for (var i = 0; i < factorArray.length; i++) {
+			document.write(factorArray[i]);
+		}
+	}
+
+	/* showFactors test code
+
+	var testArray = [1,2,4,8];
+	showFactors(testArray);
+
+	testArray = [1];
+	showFactors(testArray);
+
+	testArray = [];
+	showFactors(testArray);
+
+	*/
+
+	function addFactors(factorArray) {
+		var factorSum = 0;
+		for (var i = 0; i < factorArray.length; i++) {
+			factorSum += factorArray[i];
+		}
+		return factorSum;
+	}
+
+	/* addFactors test code
+
+	document.write("Expect : 271150 ");
+
+	var testArray = [251,1,15,4];
+	document.write(addFactors(testArray));
+
+	var testArray = [1,2,4,8];
+	document.write(addFactors(testArray));
+
+	var testArray = [];
+	document.write(addFactors(testArray));
+
+	*/
+
+	function getFactors(number) {
+		var factorArray = [];
+		var factorIndex = 0;
+		for (var i = 0; i < number; i++) {
+			if ((number % i) == 0) {
+				factorArray[factorIndex] = i;
+				factorIndex++;
+			}
+		}
+		return factorArray;
+	}
+
+	/* test code for getFactors
+
+	document.write("Expect: 12591366731 ");
+
+	var factorArray = getFactors(118);
+	for (var i = 0; i < factorArray.length; i++) {
+		document.write(factorArray[i]);
+	}
+
+	var factorArray = getFactors(20019);
+	for (var i = 0; i < factorArray.length; i++) {
+		document.write(factorArray[i]);
+	}
+
+	var factorArray = getFactors(2);
+	for (var i = 0; i < factorArray.length; i++) {
+		document.write(factorArray[i]);
+	}
+
+	*/
+
+	document.getElementById("button1").addEventListener("click", function() {
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+
+		var num1Factors = getFactors(num1);
+		var num2Factors = getFactors(num2);
+
+		var num1Sum = addFactors(num1Factors);
+		var num2Sum = addFactors(num2Factors);
+
+		if (num1Sum == num2 & num2Sum == num1) {
+			document.write("<h1 style='text-align: center; margin-top: 30px;'>Amicable!</h1>");
+		}
+		else {
+			document.write("<h1 style='text-align: center; margin-top: 30px;'>Not Amicable.</h1>");
+		}
+	})
+</script>
+</html>
