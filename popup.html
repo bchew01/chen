@@ -6,33 +6,30 @@
 	<title>Cookies Test</title>
 </head>
 <body>
-	<!--Creates the popup body-->
 <div class="popup-overlay">
-  <!--Creates the popup content-->
+
   <div class="popup-content">
     <h2>Enter Email</h2>
 
     <input type='text' id="emailBox">
-        <!--popup's close button-->
     <button class="close">Submit!</button> </div>
 </div>
-<!--Content shown when popup is not displayed-->
 <h1 id='greet'>Welcome</h1>
 </body>
 <script>
 	window.onload = function() {
 		var uEmail = document.cookie.indexOf("email");
 		if (uEmail > -1 ) {
+ 			alert("cookie exists");
  			document.getElementById("greet").append(" " +
- 				document.cookie);
+ 				getCookie("email"));
 		}
   		else {
   			$(".popup-overlay, .popup-content").addClass("active");
   		}
 
 };
-
-//removes the "active" class to .popup and .popup-content when the "Close" button is clicked 
+//removes the active class from popup and popup overlay when user tries to close the popup
 $(".close").on("click", function() {
 	var email = document.getElementById("emailBox").value;
 	if (email !== "") {
@@ -44,5 +41,22 @@ $(".close").on("click", function() {
 	}
   	$(".popup-overlay, .popup-content").removeClass("active");
 });
+
+//get the value of a cookie with a certain name
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
 </script>
 </html>
