@@ -23,9 +23,8 @@
 	window.onload = function() {
 		var uEmail = document.cookie.indexOf("email");
 		if (uEmail > -1 ) {
- 			alert("cookie exists");
  			document.getElementById("greet").append(" " +
- 				document.cookie[0]);
+ 				document.cookie);
 		}
   		else {
   			$(".popup-overlay, .popup-content").addClass("active");
