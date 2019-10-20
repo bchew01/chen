@@ -20,7 +20,6 @@
 	window.onload = function() {
 		var uEmail = document.cookie.indexOf("email");
 		if (uEmail > -1 ) {
- 			alert("cookie exists");
  			document.getElementById("greet").append(" " +
  				getCookie("email"));
 		}
