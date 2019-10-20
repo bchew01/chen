@@ -15,6 +15,7 @@
     <button class="close">Submit!</button> </div>
 </div>
 <h1 id='greet'>Welcome</h1>
+<h3 id='eChange'>Not your email? Click here.</h3>
 </body>
 <script>
 	window.onload = function() {
@@ -40,6 +41,11 @@ $(".close").on("click", function() {
 	}
   	$(".popup-overlay, .popup-content").removeClass("active");
 });
+
+$("#eChange").on("click", function() {
+  	$(".popup-overlay, .popup-content").addClass("active");
+  	document.getElementById("greet").innerHTML = "Welcome";
+})
 
 //get the value of a cookie with a certain name
 function getCookie(cname) {
