@@ -17,6 +17,14 @@ function makeInfoList() {
 	}
 }
 
+function hideAllInfo() {
+	$("#00").hide();
+	$("#01").hide();
+	$("#02").hide();
+	$("#03").hide();
+	$("#04").hide();
+}
+
 
 var art0 = new art("Mona Lisa", "$500M", "small_Mona_Lisa.jpg");
 var art1 = new art("Starry Night", "$350M", "starry.jpg");
