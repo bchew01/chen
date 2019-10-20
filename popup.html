@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel = "stylesheet" type = "text/css" href = "popup.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<title>Cookies Test</title>
+</head>
+<body>
+	<!--Creates the popup body-->
+<div class="popup-overlay">
+  <!--Creates the popup content-->
+  <div class="popup-content">
+    <h2>Enter Email</h2>
+
+    <input type='text' id="emailBox">
+        <!--popup's close button-->
+    <button class="close">Submit!</button> </div>
+</div>
+<!--Content shown when popup is not displayed-->
+<h1 id='greet'>Welcome</h1>
+</body>
+<script>
+	window.onload = function() {
+		var uEmail = document.cookie.indexOf("email");
+		if (uEmail > -1 ) {
+ 			alert("cookie exists");
+ 			document.getElementById("greet").append(" " +
+ 				document.cookie[0]);
+		}
+  		else {
+  			$(".popup-overlay, .popup-content").addClass("active");
+  		}
+
+};
+
+//removes the "active" class to .popup and .popup-content when the "Close" button is clicked 
+$(".close").on("click", function() {
+	var email = document.getElementById("emailBox").value;
+	if (email !== "") {
+		var d = new Date();
+		d.setTime(d.getTime() + (7*24*60*60*1000));
+		var expireTime = "expires" + d.toUTCString();
+		document.cookie = "email=" + email + ";" + expireTime;
+		document.getElementById("greet").append(" " + email);
+	}
+  	$(".popup-overlay, .popup-content").removeClass("active");
+});
+</script>
+</html>
