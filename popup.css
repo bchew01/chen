@@ -44,7 +44,8 @@ button {
 
 #eChange:hover {
   text-decoration: underline;
-  color: blue;
+  color: #0000FF;
+  cursor: pointer;
 }
 
 ul.nav {
