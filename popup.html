@@ -6,6 +6,7 @@
 	<title>Cookies Test</title>
 </head>
 <body>
+<!-- nav bar -->
 <ul class="nav">
     <li><a href="#">Home</a></li>
     <li><a href="#">Dates</a></li>
@@ -27,6 +28,7 @@
 <h3 id='eChange'>Not your email? Click here.</h3>
 </body>
 <script>
+	// if we don't have their email yet, display the popup
 	window.onload = function() {
 		var uEmail = document.cookie.indexOf("email");
 		if (uEmail > -1 ) {
@@ -38,7 +40,8 @@
   		}
 
 };
-//removes the active class from popup and popup overlay when user tries to close the popup
+// closes popup by removing the active class from the overlay and content divs
+// also stores user's email as a cookie for 1 week if the text box is not empty
 $(".close").on("click", function() {
 	var email = document.getElementById("emailBox").value;
 	if (email !== "") {
@@ -51,12 +54,13 @@ $(".close").on("click", function() {
   	$(".popup-overlay, .popup-content").removeClass("active");
 });
 
+// brings up the popup when the user clicks 'not my email'
 $("#eChange").on("click", function() {
   	$(".popup-overlay, .popup-content").addClass("active");
   	document.getElementById("greet").innerHTML = "Welcome";
 })
 
-//get the value of a cookie with a certain name
+//get the value of a cookie with a certain name -- used in window.onload function
 function getCookie(cname) {
   var name = cname + "=";
   var decodedCookie = decodeURIComponent(document.cookie);
