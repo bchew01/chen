@@ -26,11 +26,11 @@ function hideAllInfo() {
 }
 
 
-var art0 = new art("Mona Lisa", "$500M", "small_Mona_Lisa.jpg");
-var art1 = new art("Starry Night", "$350M", "starry.jpg");
-var art2 = new art("American Gothic", "$1B", "gothic.jpg");
-var art3 = new art("The Last Supper", "$375M", "supper.jpg");
-var art4 = new art("Guernica", "$425M", "guernica.jpg");
+var art0 = new art("Mona Lisa", "$21", "small_Mona_Lisa.jpg");
+var art1 = new art("Starry Night", "$22", "starry.jpg");
+var art2 = new art("American Gothic", "$100", "gothic.jpg");
+var art3 = new art("The Last Supper", "$23", "supper.jpg");
+var art4 = new art("Guernica", "$24", "guernica.jpg");
 
 var artArray = [art0, art1, art2, art3, art4];
 
