@@ -2,33 +2,26 @@
 <html>
 <head>
 	<link rel = "stylesheet" type = "text/css" href = "popup.css">
+  <script src="navbar.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<title>Cookies Test</title>
 </head>
 <body>
-<!-- nav bar -->
-<ul class="nav">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Dates</a></li>
-    <li><a href="#">FAQ</a></li>
-    <li><a href="#">About Us</a></li>
-    <li><a href="#">Contact Us</a></li>
-    <li><a href="#">Stos</a></li>
-    <li><a href="#">Get Involved</a></li>
-</ul>
-<div class="popup-overlay">
+<script>BuildNavBar();</script>
+<div class="popupOverlay">
 
-  <div class="popup-content">
+  <div class="popupContent">
     <h2>Enter Email</h2>
-
+    <form>
     <input type='text' id="emailBox">
     <button class="close">Submit!</button> </div>
+  </form>
 </div>
 <h1 id='greet'>Welcome</h1>
 <h3 id='eChange'>Not your email? Click here.</h3>
 </body>
+
 <script>
-	// if we don't have their email yet, display the popup
 	window.onload = function() {
 		var uEmail = document.cookie.indexOf("email");
 		if (uEmail > -1 ) {
@@ -38,10 +31,10 @@
   		else {
   			$(".popup-overlay, .popup-content").addClass("active");
   		}
-
 };
-// closes popup by removing the active class from the overlay and content divs
-// also stores user's email as a cookie for 1 week if the text box is not empty
+
+
+//removes the active class from popup and popup overlay when user tries to close the popup
 $(".close").on("click", function() {
 	var email = document.getElementById("emailBox").value;
 	if (email !== "") {
@@ -54,13 +47,14 @@ $(".close").on("click", function() {
   	$(".popup-overlay, .popup-content").removeClass("active");
 });
 
-// brings up the popup when the user clicks 'not my email'
+
 $("#eChange").on("click", function() {
   	$(".popup-overlay, .popup-content").addClass("active");
   	document.getElementById("greet").innerHTML = "Welcome";
 })
 
-//get the value of a cookie with a certain name -- used in window.onload function
+
+//get the value of a cookie with a certain name
 function getCookie(cname) {
   var name = cname + "=";
   var decodedCookie = decodeURIComponent(document.cookie);
