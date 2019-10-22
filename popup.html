@@ -1,59 +1,51 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<link rel = "stylesheet" type = "text/css" href = "popup.css">
-  <script src="navbar.js"></script>
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<title>Cookies Test</title>
+  <link rel = "stylesheet" type = "text/css" href = "popup.css">
+  <script src="navbar_footer.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <title>Cookies Test</title>
 </head>
 <body>
-<script>BuildNavBar();</script>
-<div class="popupOverlay">
+<script>BuildNavBar()</script>
+<div class="popup-overlay">
 
-  <div class="popupContent">
+  <div class="popup-content">
     <h2>Enter Email</h2>
-    <form>
+
     <input type='text' id="emailBox">
     <button class="close">Submit!</button> </div>
-  </form>
 </div>
 <h1 id='greet'>Welcome</h1>
 <h3 id='eChange'>Not your email? Click here.</h3>
 </body>
-
 <script>
-	window.onload = function() {
-		var uEmail = document.cookie.indexOf("email");
-		if (uEmail > -1 ) {
- 			document.getElementById("greet").append(" " +
- 				getCookie("email"));
-		}
-  		else {
-  			$(".popup-overlay, .popup-content").addClass("active");
-  		}
+  window.onload = function() {
+    var uEmail = document.cookie.indexOf("email");
+    if (uEmail > -1 ) {
+      document.getElementById("greet").append(" " +
+        getCookie("email"));
+    }
+      else {
+        $(".popup-overlay, .popup-content").addClass("active");
+      }
 };
-
-
 //removes the active class from popup and popup overlay when user tries to close the popup
 $(".close").on("click", function() {
-	var email = document.getElementById("emailBox").value;
-	if (email !== "") {
-		var d = new Date();
-		d.setTime(d.getTime() + (7*24*60*60*1000));
-		var expireTime = "expires" + d.toUTCString();
-		document.cookie = "email=" + email + ";" + expireTime;
-		document.getElementById("greet").append(" " + email);
-	}
-  	$(".popup-overlay, .popup-content").removeClass("active");
+  var email = document.getElementById("emailBox").value;
+  if (email !== "") {
+    var d = new Date();
+    d.setTime(d.getTime() + (7*24*60*60*1000));
+    var expireTime = "expires" + d.toUTCString();
+    document.cookie = "email=" + email + ";" + expireTime;
+    document.getElementById("greet").append(" " + email);
+  }
+    $(".popup-overlay, .popup-content").removeClass("active");
 });
-
-
 $("#eChange").on("click", function() {
-  	$(".popup-overlay, .popup-content").addClass("active");
-  	document.getElementById("greet").innerHTML = "Welcome";
+    $(".popup-overlay, .popup-content").addClass("active");
+    document.getElementById("greet").innerHTML = "Welcome";
 })
-
-
 //get the value of a cookie with a certain name
 function getCookie(cname) {
   var name = cname + "=";
