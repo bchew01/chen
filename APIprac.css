@@ -1,0 +1,19 @@
+#teamData {
+	text-align: center;
+	font-size: 200%;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 5%;
+	width: 30%;
+	height: 6%;
+	border: solid 1px black;
+	background-color: #ff0000;
+}
+
+#what, #where, #options, #why {
+	margin-left: 5%;
+}
+
+body {
+	background-color: #add8e6;
+}
